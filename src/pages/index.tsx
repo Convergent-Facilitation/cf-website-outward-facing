@@ -45,12 +45,13 @@ function HeroBanner () {
         </Heading>
         <p className={styles.heroProjectSubtitle}> Bring people together across differences within a facilitated decision making process and find creative and nuanced solutions that work for everyone.</p>
         <div className={styles.indexCtas}>
-          <Link className="button button--primary" to="/engage/what-can-you-do">
-          <InlineIcon icon="mdi:seedling"/>
-            <Translate> Grow your CF Skills</Translate>
+          <Link className="button button--primary" to="/case-studies">
+          <InlineIcon icon="entypo:documents"/>
+            <Translate> Read our Case Studies</Translate>
           </Link>
-          <Link className="button button--secondary button-outline" to="/about">
-            <Translate> How can CF support you?</Translate>
+          <Link className="button button--secondary button-outline" to="/learn">
+          <InlineIcon icon="mdi:seedling"/>
+            <Translate> Grow your own CF Skills</Translate>
           </Link>
 
         </div>
@@ -86,12 +87,6 @@ function QuotesSection () {
             </div>
           ))}
       </div>
-  <div className="container text--center margin-bottom--x1">
-          <Link className="button button--secondary button-outline " to="/about">
-          <InlineIcon icon="fa6-solid:hand-point-right"/>
-            <Translate> Learn more about CF</Translate>
-          </Link>
-    </div>
     </div>
   )
 }
@@ -100,21 +95,16 @@ function VideoContainer () {
   return (
   <div className="container text--center margin-bottom--x1">
           <Heading as="h1" >
-            <Translate>Hear from Lisa why bother learning Convergent Facilitation</Translate>
+            <Translate>Get a small taste of the power of Convergent Facilitation from Paul</Translate>
           </Heading>
           <div className="video-container">
             <LiteYouTubeEmbed
-              id="mDuspgB5Ko0"
+              id="xsPvRmUwEIE"
               params="autoplay=1&autohide=1&showinfo=0&rel=0"
-              title="Convergent Facilitation Teaser"
+              title="Convergent Facilitation Podcast Episode"
               poster="maxresdefault"
               webp
             />
-			<br/>
-          <Link className="button button--primary button-outline" to="/engage/what-can-you-do">
-          <InlineIcon icon="fa6-solid:hand-point-right"/>
-            <Translate> Start learning CF now</Translate>
-          </Link>
       </div>
     </div>
   )
@@ -174,7 +164,7 @@ function Feature ({
   )
 }
 
-export default function Home (): JSX.Element {
+export default function HoVideoContaineVideoContainer (): JSX.Element {
   const {
     siteConfig: { customFields, tagline }
   } = useDocusaurusContext()
@@ -189,10 +179,10 @@ export default function Home (): JSX.Element {
             <FeaturesContainer />
         </div>
           <div className={styles.section}>
-            <VideoContainer />
+            <QuotesSection />
         </div>
           <div className={styles.section}>
-            <QuotesSection />
+            <VideoContainer />
         </div>
         </div>
       </main>

@@ -38,9 +38,7 @@ const config = {
         // `hashed` is recommended as long-term-cache of index file is possible.
         hashed: true,
         indexPages: true,
-        docsRouteBasePath: ['/engage', '/resources'],
         blogRouteBasePath: ['/blog', '/events'],
-        docsDir: ['engage', 'resources'],
         blogDir: ['blog', 'events']
 
         // For Docs using Chinese, The `language` is recommended to set to:
@@ -57,16 +55,9 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         debug: false,
-
-        docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          path: 'engage',
-          routeBasePath: 'engage',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/Convergent-Facilitation/cf-website/tree/main/'
-        },
+  docs: {
+        /* docs plugin options */
+      },
         blog: {
           showReadingTime: true,
           blogSidebarTitle: 'All Posts',
@@ -107,33 +98,39 @@ const config = {
         items: [
           { label: 'About', to: 'about', position: 'left' },
           {
+            type: 'dropdown',
             label: 'Resources',
-            type: 'doc',
-            docsPluginId: 'resources',
             position: 'left',
-            docId: 'overview'
+            items: [
+              {
+                label: 'Case Studies',
+                to: 'case-studies'
+              },
+              {
+                label: 'The Book',
+                to: 'the-book'
+              },
+              {
+                label: 'Primer / Handout',
+                to: 'primer'
+              },
+              {
+                label: 'Facilitation Support',
+                to: 'facilitation-support'
+              },
+              {
+                label: 'Newsletter',
+                to: 'newsletter'
+              }
+            ]
           },
-          { label: 'Blog', to: 'blog', position: 'left' },
-          { label: 'Events', to: 'events', position: 'left' },
-          { label: 'Contact', to: 'contact', position: 'left' },
+		  { label: 'Learn', to: '/learn', position: 'left' },
           {
             type: 'search',
             position: 'right'
           },
           { label: 'Give', to: '/give', position: 'right' },
-
-          {
-            label: 'Engage',
-            type: 'doc',
-            position: 'right',
-            docId: 'what-can-you-do'
-          },
-          {
-            href: 'https://www.hylo.com/groups/convergent-facilitation',
-            position: 'right',
-            className: 'header-hylo-link',
-            'aria-label': 'Hylo Group'
-          }
+          { label: 'Contact', to: 'contact', position: 'right' }
 
         ]
       },
@@ -270,18 +267,6 @@ const config = {
         authorsMapPath: '../humans.yml'
       }
     ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        path: 'resources',
-        routeBasePath: 'resources',
-        editUrl:
-            'https://github.com/Convergent-Facilitation/cf-website/tree/main/',
-        id: 'resources',
-        sidebarPath: require.resolve('./sidebars.js')
-
-      }
-    ]
 
   ]
 }
