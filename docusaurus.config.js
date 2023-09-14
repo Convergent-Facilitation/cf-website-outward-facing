@@ -114,16 +114,13 @@ const config = {
                 to: 'primer'
               },
               {
-                label: 'Facilitation Support',
-                to: 'facilitation-support'
-              },
-              {
                 label: 'Newsletter',
                 to: 'newsletter'
               }
             ]
           },
 		  { label: 'Learn', to: '/learn', position: 'left' },
+		  { label: 'Services', to: '/services', position: 'left' },
           {
             type: 'search',
             position: 'right'
