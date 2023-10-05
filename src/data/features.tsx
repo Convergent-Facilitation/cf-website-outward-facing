@@ -20,15 +20,19 @@ export type FeatureItem = {
 
 
 
+
+
+
+
 const FEATURES: FeatureItem[] = [
 
   {
     title: translate({
-      message: 'Dig Deep',
+      message: 'Welcome Dissent',
       id: 'homepage.features.ready-for-translations.title',
     }),
     image: {
-      src: '/img/dig_deep_blue_dot_creature_small.png',
+      src: '/img/website-feature-welcome-dissent-blue.png',
       width: 1137,
       height: 776.59,
     },
@@ -45,7 +49,7 @@ const FEATURES: FeatureItem[] = [
       id: 'homepage.features.document-versioning.title',
     }),
     image: {
-      src: '/img/resolve_crisis_imagination_green_creature.png',
+      src: '/img/website-feature-resolve-crisis-of-imagination-green.png',
       width: 1038.23,
       height: 693.31,
     },
@@ -57,11 +61,11 @@ const FEATURES: FeatureItem[] = [
   },
   {
     title: translate({
-      message: 'Connect and Experience Togetherness',
+      message: 'Regain faith in humanity',
       id: 'homepage.features.content-search.title',
     }),
     image: {
-      src: '/img/experience_community.png',
+      src: '/img/website-feature-regain-faith-red.png',
       width: 1137.97,
       height: 736.21,
     },
@@ -73,11 +77,11 @@ const FEATURES: FeatureItem[] = [
   },
   {
     title: translate({
-      message: 'Resolve Complex Puzzles Together',
+      message: 'Attend to Power Differences',
       id: 'homepage.features.powered-by-mdx.title',
     }),
     image: {
-      src: '/img/solve_complex_puzzle_little_creatures.png',
+      src: '/img/website-feature-power-differences-purple.png',
       width: 1009.54,
       height: 717.96,
     },
@@ -93,7 +97,7 @@ const FEATURES: FeatureItem[] = [
       id: 'homepage.features.built-using-react.title',
     }),
     image: {
-      src: '/img/build_confidence_yellow_creatures.png',
+      src: '/img/website-feature-build-confidence.png',
       width: 1108,
       height: 731.18,
     },
@@ -105,40 +109,5 @@ const FEATURES: FeatureItem[] = [
   },
 ];
 
-// export type FeatureItem = {
-//   title: string;
-//   image: {
-//     src: string;
-//     width: number;
-//     height: number;
-//   };
-//   text: string;
-// };
-
-
-// const FEATURES: FeatureItem[] = [
-//   {
-//     title: 'Inviting dissent',
-//     image: {
-//       src: '/img/undraw_faq_re_31cw.svg',
-//       width: 1137,
-//       height: 776.59,
-//     },
-//     text: 'Rather than pressing for agreement, we are encouraging participants to bring their concerns to create a resilient decision that everyone is willing to follow.',
-//   },
-// ];
-// export default function MyComponent() {
-//   return (
-//     <>
-//       {FEATURES.map((feature) => (
-//         <div key={feature.title}>
-//           <h3>{feature.title}</h3>
-//           <img src={feature.image.src} width={feature.image.width} height={feature.image.height} />
-//           <p>{feature.text}</p>
-//         </div>
-//       ))}
-//     </>
-//   );
-// }
 
 export default FEATURES;
