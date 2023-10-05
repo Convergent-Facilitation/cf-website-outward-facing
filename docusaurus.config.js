@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 const config = {
   title: 'Convergent Facilitation',
   tagline: 'Getting Out of the Mess We Are in Together',
-  favicon: 'img/cf-logo-hcd-arrow.webp',
+  favicon: 'img/convergentfacilitation_logo.pn',
 
   // Set the production url of your site here
   url: 'https://convergentfacilitation.netlify.app',
@@ -88,7 +88,7 @@ const config = {
         title: 'Convergent Facilitation',
         logo: {
           alt: 'Convergent Facilitation Logo',
-          src: 'img/cf-logo-hcd-arrow.webp'
+          src: 'img/convergentfacilitation_logo.png'
         },
         items: [
           { label: 'About', to: 'about', position: 'left' },
