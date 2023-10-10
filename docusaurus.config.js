@@ -135,50 +135,58 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Learn',
+            title: 'Process and Impact',
             items: [
               {
-                label: 'Spheres of Engagement',
+                label: 'What is CF',
                 to: '/engage/what-can-you-do'
               },
               {
-                label: 'Events',
-                to: 'events'
-              },
-              {
-                label: 'Co-Create on Hylo',
+                label: 'Case Studies',
                 to: '/engage/apply-and-apprentice/join-hylo'
               },
               {
-                label: 'Practice groups',
-                to: '/engage/experience-and-embody/practice-groups'
-              }
+                label: 'Book: Highest Common Denominator',
+                href: 'https://thefearlessheart.org/store/the-highest-common-denominator/'
+              },
+              {
+                label: 'CF Handout',
+                href: 'https://thefearlessheart.org/item/organizational-collaboration-primer-packet'
+              },
             ]
           },
           {
-            title: 'Resources',
+            title: 'Engage',
             items: [
               {
-                label: 'Book: The Highest Common Denominator',
-                href: '/resources/the-book'
+                label: 'Get Support',
+                to: '/services'
               },
               {
-                label: 'Recordings Coaching Calls',
-                to: '/resources/recordings-coaching-calls/overview-coaching-call-recordings'
+                label: 'Mission',
+                to: '/mission'
               },
               {
-                label: 'Case Studies',
-                href: '/resources/case-studies'
+                label: 'Support Our Work',
+                to: '/give'
               },
               {
-                label: 'CF Facilitators',
-                to: '/about#who-we-are'
-              }
+                label: 'Introductory courses',
+				to: '/cf-intro-courses'
+              },
+              {
+                label: 'Grow CF Capacity in Community',
+                href: 'https://grow.convergentfacilitation.org'
+              },
             ]
           },
           {
             title: 'More',
             items: [
+              {
+                label: 'Contact',
+                to: '/contact'
+              },
               {
                 label: 'Blog',
                 to: 'blog'
@@ -187,54 +195,14 @@ const config = {
                 label: 'Newsletter',
                 to: '/contact#stay-in-the-loop'
               },
-              {
-                label: 'NGL Community',
+              { label: 'NGL Community',
                 href: 'https://nglcommunity.org'
               },
-              {
-                label: 'Contact',
-				  to: '/contact'
-              },
-              {
-                label: 'Give',
-                to: '/give'
-              }
 
-              //   {
-              //     html: `
-              //   <a href="https://www.netlify.com" target="_blank" rel="noreferrer noopener" aria-label="Deploys by Netlify">
-              //     <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" width="114" height="51" />
-              //   </a>
-              // `,
-              //   },
             ]
           },
-          {
-            title: 'Legal (needed?)',
-            // Please don't remove the privacy and terms, it's a legal
-            // requirement.
-            items: [
-              {
-                label: 'Privacy (needed?)',
-                href: '/'
-              },
-              {
-                label: 'Terms (needed?)',
-                href: '/'
-              },
-              {
-                label: 'Commons and License',
-                href: '/'
-              }
-            ]
-          }
         ],
-        logo: {
-          alt: 'Nonviolent Global Liberation Community Logo',
-          src: '/img/ngl-logo-white.webp',
-          href: 'https://nglcommunity.org'
-        },
-        copyright: `Nonviolent Global Liberation Community ${new Date().getFullYear()}. Built with Docusaurus.`
+        copyright: `Convergent Facilitation ${new Date().getFullYear()}. Built with Docusaurus.`
 
       },
       prism: {
