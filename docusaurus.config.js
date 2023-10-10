@@ -7,11 +7,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Convergent Facilitation',
-  tagline: 'Getting Out of the Mess We Are in Together',
-  favicon: 'img/convergentfacilitation_logo.pn',
+  tagline: 'Finding a way forward together',
+  favicon: 'img/convergentfacilitation_logo.png',
 
   // Set the production url of your site here
-  url: 'https://convergentfacilitation.netlify.app',
+  url: 'https://convergentfacilitation.org',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -91,37 +91,42 @@ const config = {
           src: 'img/convergentfacilitation_logo.png'
         },
         items: [
-          { label: 'About', to: 'about', position: 'left' },
+          { label: 'What is CF', to: 'about', position: 'left' },
+		  { label: 'Get Support', to: '/services', position: 'left' },
+		  { label: 'Case Studies', to: '/case-studies', position: 'left' },
+		  { label: 'Mission', to: '/mission', position: 'left' },
           {
             type: 'dropdown',
-            label: 'Resources',
+            label: 'Learn more',
             position: 'left',
             items: [
               {
-                label: 'Case Studies',
-                to: 'case-studies'
+				  label: 'Book: Highest Common Denominator',
+                to: 'https://thefearlessheart.org/store/the-highest-common-denominator/'
               },
               {
-                label: 'The Book',
-                to: 'the-book'
+                label: 'CF Handout',
+                to: 'https://thefearlessheart.org/item/organizational-collaboration-primer-packet/'
               },
               {
-                label: 'Primer / Handout',
-                to: 'primer'
+                label: 'Intro Courses',
+                to: 'cf-intro-courses'
+              },
+              {
+                label: 'Learning Community',
+                to: 'https://grow.convergentfacilitation.org'
               },
               {
                 label: 'Newsletter',
-                to: 'newsletter'
+                to: 'contact#stay-in-the-loop'
               }
             ]
           },
-		  { label: 'Learn', to: '/learn', position: 'left' },
-		  { label: 'Services', to: '/services', position: 'left' },
           {
             type: 'search',
             position: 'right'
           },
-          { label: 'Give', to: '/give', position: 'right' },
+          { label: 'Support Our Work', to: '/give', position: 'right' },
           { label: 'Contact', to: 'contact', position: 'right' }
 
         ]
