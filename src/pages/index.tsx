@@ -43,15 +43,15 @@ function HeroBanner () {
             }}
           />
         </Heading>
-        <p className={styles.heroProjectSubtitle}> Bring people together across differences within a facilitated decision making process and find creative and nuanced solutions that work for everyone.</p>
+        <p className={styles.heroProjectSubtitle}>Discover breakthrough solutions with a facilitated decision-making process designed to build trust across differences.</p>
         <div className={styles.indexCtas}>
           <Link className="button button--primary" to="/case-studies">
           <InlineIcon icon="entypo:documents"/>
             <Translate> Read our Case Studies</Translate>
           </Link>
-          <Link className="button button--secondary button-outline" to="/learn">
+          <Link className="button button--secondary button-outline" to="/services">
           <InlineIcon icon="mdi:seedling"/>
-            <Translate> Grow your own CF Skills</Translate>
+            <Translate> Get Support</Translate>
           </Link>
 
         </div>
