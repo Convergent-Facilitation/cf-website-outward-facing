@@ -55,6 +55,22 @@ const QUOTES = [
       <Translate
         id="homepage.quotes.risky-vetter"
         description="Quote of Ricky Vetter on the home page">
+Convergent Facilitation is a revolutionary new way of collaborating by creating space for all needs to be heard, inviting dissent without fear or animosity, and attending to power dynamics that are in the room.
+      </Translate>
+    ),
+  },
+  {
+    thumbnail: require('./quotes/kazu-haga.jpg'),
+    name: 'Kazu Haga',
+    title: translate({
+      id: 'homepage.quotes.risky-vetter.title',
+      message: 'Writer, facilitator, and organizer with the Movement for Black Lives',
+      description: 'Title of quote of Ricky Vetter on the home page',
+    }),
+    text: (
+      <Translate
+        id="homepage.quotes.risky-vetter"
+        description="Quote of Ricky Vetter on the home page">
         Convergent Facilitation is a vision of democracy that is something other than a six-hour meeting after which we are too tired to implement any decision. It opens a path towards a democratic praxis where we all take responsibility for the whole and make decisions that meet the needs of everyone.
       </Translate>
     ),
