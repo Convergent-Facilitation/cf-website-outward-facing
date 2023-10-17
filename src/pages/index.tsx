@@ -25,7 +25,7 @@ function HeroBanner () {
           <img
             alt={translate({ message: 'Colorfull dots that form an arrow' })}
             className={styles.heroLogo}
-            src={useBaseUrl('/img/mess-to-arrow-full-colors.webp')}
+            src={useBaseUrl('/img/mess-to-arrow-full-colors-transparent.webp')}
             width="700"
             height="550"
           />
