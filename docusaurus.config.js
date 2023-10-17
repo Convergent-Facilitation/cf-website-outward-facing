@@ -65,7 +65,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Convergent-Facilitation/cf-website/tree/main/'
+			'https://github.com/Convergent-Facilitation/cf-website-outward-facing/tree/main'
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css')
